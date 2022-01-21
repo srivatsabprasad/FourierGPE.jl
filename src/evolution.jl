@@ -148,6 +148,7 @@ end
 """
     showpsi(x,y,ψ)
 plot n and S in a 2D cross-section
+Think x and y should be swapped in the heatmap, though.
 """
 function showpsi(x,y,ψ)
     p1 = heatmap(x,y,abs2.(ψ),aspectratio=1,c=cgrad(ColorSchemes.bone_1.colors))
