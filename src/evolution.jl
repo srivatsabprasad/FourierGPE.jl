@@ -144,20 +144,3 @@ function testsim(sim)
         end
 return sol,err
 end
-
-"""
-    showpsi(x,y,ψ)
-Plot the 2D density and phase
-"""
-function showpsi(x,y,ψ)
-    p1 = heatmap(x,y,abs2.(ψ),aspectratio=1,c=bone)
-    xlims!(x[1],x[end]);ylims!(y[1],y[end])
-    xlabel!(L"x");ylabel!(L"y")
-    title!(L"|\psi|^2")
-    p2 = heatmap(x,y,angle.(ψ),aspectratio=1,c=turbo)
-    xlims!(x[1],x[end]);ylims!(y[1],y[end])
-    xlabel!(L"x");ylabel!(L"y")
-    title!(L"\textrm{phase} (\psi)")
-    p = plot(p1,p2,size=(600,300))
-    return p
-end
