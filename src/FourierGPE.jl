@@ -41,7 +41,7 @@ export Sim, @pack_Sim!, @unpack_Sim, testsim
 export Params, @pack_Params!, @unpack_Params
 export k2, @pack!, @unpack, makeT, definetransforms #makeTMixed,
 export Field, XField, KField
-export showpsi
+# export showpsi
 # export c1, c2, c3
 
 end 
