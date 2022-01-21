@@ -14,7 +14,7 @@ import DiffEqCallbacks.FunctionCallingCallback
 import OrdinaryDiffEq: ODEProblem, solve
 
 # using LaTeXStrings
-using ColorSchemes
+# using ColorSchemes
 # using Plots
 # const c1 = cgrad(ColorSchemes.inferno.colors)
 # const c2 = cgrad(ColorSchemes.RdBu_11.colors)
@@ -41,7 +41,6 @@ export Sim, @pack_Sim!, @unpack_Sim, testsim
 export Params, @pack_Params!, @unpack_Params
 export k2, @pack!, @unpack, makeT, definetransforms #makeTMixed,
 export Field, XField, KField
-export showpsi
-# export c1, c2, c3
+# export c1, c2, c3, showpsi
 
 end 
