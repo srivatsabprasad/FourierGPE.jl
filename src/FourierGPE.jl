@@ -14,7 +14,7 @@ import DiffEqCallbacks.FunctionCallingCallback
 import OrdinaryDiffEq: ODEProblem, solve
 
 # using LaTeXStrings
-# using ColorSchemes
+using ColorSchemes
 # using Plots
 # const c1 = cgrad(ColorSchemes.inferno.colors)
 # const c2 = cgrad(ColorSchemes.RdBu_11.colors)
